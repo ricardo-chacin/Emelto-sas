@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="EMELTO SAS: mantenimiento mecánico industrial, montajes e inspecciones para plantas en Colombia."
+    />
+    <title>Inicio | EMELTO SAS</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-emelto sticky-top" aria-label="Principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo-light.svg" alt="EMELTO SAS" height="44" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-orange btn-sm px-3" href="contacto.html">Solicitar visita</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="contenido">
+      <!-- Hero -->
+      <header class="hero-home">
+        <div class="container py-5">
+          <p class="section-kicker mb-3">Mantenimiento mecánico industrial</p>
+          <h1 class="display-hero display-4 col-lg-9">
+            Disponibilidad de planta con intervención precisa y segura
+          </h1>
+          <p class="lead col-lg-7 mt-3">
+            EMELTO SAS atiende equipos rotativos, estructuras y sistemas de transmisión en operación continua.
+            Integramos preventivo, correctivo, montajes e inspecciones con un equipo de 33 personas en campo y SST.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-orange btn-lg" href="servicios.html">Ver servicios</a>
+            <a class="btn btn-outline-light btn-lg" href="proyectos.html">Casos de éxito</a>
+          </div>
+          <div class="hero-stats mt-5">
+            <div>
+              <strong>33</strong>
+              <span>personas en operación</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>líneas de servicio</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>respuesta de emergencia</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Carrusel de operaciones -->
+      <section class="section" aria-labelledby="tituloCarrusel">
+        <div class="container">
+          <p class="section-kicker">Operación en planta</p>
+          <h2 id="tituloCarrusel" class="section-title">Intervenciones recientes</h2>
+          <div class="accent-bar"></div>
+          <div id="carruselInicio" class="carousel slide carousel-emelto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+            </div>
+            <div class="carousel-inner rounded-3 overflow-hidden">
+              <div class="carousel-item active">
+                <img src="img/carousel-1.jpg" class="d-block w-100" alt="Equipo de EMELTO en taller de mantenimiento industrial" />
+                <div class="carousel-caption">
+                  <h3 class="h5">Parada programada en línea de proceso</h3>
+                  <p class="mb-0">Cambio de rodamientos y alineación láser en 36 horas de ventana.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel-2.jpg" class="d-block w-100" alt="Maquinaria industrial en planta de producción" />
+                <div class="carousel-caption">
+                  <h3 class="h5">Confiabilidad de equipos rotativos</h3>
+                  <p class="mb-0">Rutas de inspección y lubricación para reducir paradas no planeadas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel-3.jpg" class="d-block w-100" alt="Sistemas de tubería y equipos mecánicos" />
+                <div class="carousel-caption">
+                  <h3 class="h5">Montaje de sistemas de transmisión</h3>
+                  <p class="mb-0">Instalación de reductores, acoplamientos y estructuras de soporte.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios destacados -->
+      <section class="section section-alt" aria-labelledby="tituloServicios">
+        <div class="container">
+          <p class="section-kicker">Portafolio</p>
+          <h2 id="tituloServicios" class="section-title">Servicios destacados</h2>
+          <div class="accent-bar"></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <article class="card card-emelto">
+                <img src="img/servicio-preventivo.jpg" class="card-img-top" alt="Técnico revisando un equipo en mantenimiento preventivo" />
+                <div class="card-body">
+                  <div class="icon-box mb-3"><i class="bi bi-calendar2-check" aria-hidden="true"></i></div>
+                  <h3 class="h5">Preventivo</h3>
+                  <p>Planes de inspección, lubricación y ajuste según criticidad del activo.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card card-emelto">
+                <img src="img/servicio-correctivo.jpg" class="card-img-top" alt="Soldadura y reparación mecánica en campo" />
+                <div class="card-body">
+                  <div class="icon-box mb-3"><i class="bi bi-wrench-adjustable" aria-hidden="true"></i></div>
+                  <h3 class="h5">Correctivo</h3>
+                  <p>Diagnóstico, desmonte, reparación y puesta en marcha con control de riesgos.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card card-emelto">
+                <img src="img/servicio-montaje.jpg" class="card-img-top" alt="Montaje de estructura industrial" />
+                <div class="card-body">
+                  <div class="icon-box mb-3"><i class="bi bi-building-gear" aria-hidden="true"></i></div>
+                  <h3 class="h5">Montajes</h3>
+                  <p>Instalación de maquinaria, estructuras y sistemas de transmisión en planta.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card card-emelto">
+                <img src="img/servicio-inspeccion.jpg" class="card-img-top" alt="Ingeniero realizando inspección mecánica" />
+                <div class="card-body">
+                  <div class="icon-box mb-3"><i class="bi bi-clipboard2-pulse" aria-hidden="true"></i></div>
+                  <h3 class="h5">Inspecciones</h3>
+                  <p>Evaluación de condición, reportes técnicos y recomendaciones de intervención.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="section" aria-labelledby="tituloBeneficios">
+        <div class="container">
+          <p class="section-kicker">Por qué EMELTO</p>
+          <h2 id="tituloBeneficios" class="section-title">Beneficios para su operación</h2>
+          <div class="accent-bar"></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">SST en cada intervención</h3>
+                <p class="mb-0">Cuatro profesionales SST definen ATS, permisos de trabajo y control de energía.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">Oficiales con oficio de planta</h3>
+                <p class="mb-0">Doce mecánicos oficiales lideran cuadrillas en alineación, soldadura y ajuste.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">Ventanas cortas de parada</h3>
+                <p class="mb-0">Planificamos recursos para devolver el activo dentro del tiempo acordado.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">Informes útiles para gerencia</h3>
+                <p class="mb-0">Hallazgos, causas y plan de acción, no solo una lista de actividades.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">Cobertura de emergencia</h3>
+                <p class="mb-0">Cuadrilla de correctivo para fallas que detienen producción crítica.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="benefit-item">
+                <h3 class="h5">Un solo interlocutor</h3>
+                <p class="mb-0">Gerencia y área administrativa coordinan contratos, HES y facturación.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video corporativo -->
+      <section class="section section-alt" aria-labelledby="tituloVideo">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+              <p class="section-kicker">Confiabilidad</p>
+              <h2 id="tituloVideo" class="section-title">Video: mantenimiento productivo en planta</h2>
+              <div class="accent-bar"></div>
+              <p class="section-lead">
+                Compartimos este material formativo sobre TPM porque describe el enfoque que aplicamos:
+                menos falla reactiva, más planeación y trabajo coordinado con operación.
+              </p>
+              <ul>
+                <li>Reducir paradas no programadas</li>
+                <li>Aumentar el tiempo medio entre fallas</li>
+                <li>Acortar el tiempo de reparación</li>
+              </ul>
+            </div>
+            <div class="col-lg-7">
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/mJirqjwiPus"
+                  title="Video sobre mantenimiento productivo total (TPM) aplicado a planta industrial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-emelto pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <p class="footer-brand">EMELTO SAS</p>
+            <p>Mantenimiento mecánico industrial para plantas de proceso, manufactura y energía.</p>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white fw-semibold">Navegación</p>
+            <ul class="list-unstyled">
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white fw-semibold">Contacto</p>
+            <p class="mb-1">Parque Industrial Funza, Cundinamarca</p>
+            <p class="mb-1"><a href="tel:+576013904520">+57 (601) 390 4520</a></p>
+            <p class="mb-0"><a href="mailto:contacto@emelto.com.co">contacto@emelto.com.co</a></p>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <p class="small mb-0">&copy; <span id="year"></span> EMELTO SAS. Sitio académico corporativo.</p>
+      </div>
+    </footer>
+
+    <button type="button" id="btnTop" class="btn btn-orange rounded-circle" aria-label="Volver arriba">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

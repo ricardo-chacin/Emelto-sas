@@ -1,0 +1,421 @@
+/* =========================================================
+   EMELTO SAS — Hoja de estilos corporativa
+   Paleta: #0B1F3A (azul oscuro) · #6C757D (gris) · #F28C28 (naranja)
+   Tipografías: Montserrat (títulos) · Roboto (cuerpo)
+   ========================================================= */
+
+:root {
+  --navy: #0b1f3a;
+  --navy-deep: #071526;
+  --navy-soft: #143056;
+  --gray: #6c757d;
+  --gray-light: #eef1f4;
+  --orange: #f28c28;
+  --orange-dark: #d67516;
+  --white: #ffffff;
+  --text: #243040;
+  --shadow: 0 12px 32px rgba(11, 31, 58, 0.12);
+  --radius: 0.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.display-hero,
+.section-kicker {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Accesibilidad: enlace para saltar al contenido */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--orange);
+  color: var(--navy);
+  padding: 0.75rem 1rem;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-emelto {
+  background-color: var(--navy);
+  padding-block: 0.85rem;
+  transition: box-shadow 0.25s ease, padding 0.25s ease;
+}
+
+.navbar-emelto.is-scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  padding-block: 0.5rem;
+}
+
+.navbar-emelto .navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-emelto .nav-link {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding-inline: 0.55rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-emelto .nav-link:hover,
+.navbar-emelto .nav-link:focus,
+.navbar-emelto .nav-link.active {
+  color: var(--white);
+  border-bottom-color: var(--orange);
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: var(--navy);
+}
+
+.btn-outline-navy {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+/* ---------- Encabezados de página ---------- */
+.page-hero {
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(11, 31, 58, 0.92) 0%, rgba(11, 31, 58, 0.55) 100%);
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2.5rem;
+  padding-top: 6.5rem;
+}
+
+.section-kicker {
+  color: var(--orange);
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.section-lead {
+  color: var(--gray);
+  max-width: 42rem;
+}
+
+.accent-bar {
+  width: 64px;
+  height: 4px;
+  background: var(--orange);
+  border-radius: 4px;
+  margin-block: 0.75rem 1.25rem;
+}
+
+/* ---------- Hero inicio ---------- */
+.hero-home {
+  position: relative;
+  min-height: 92vh;
+  background: url("../img/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(11, 31, 58, 0.94) 18%, rgba(11, 31, 58, 0.55) 70%, rgba(242, 140, 40, 0.25) 100%);
+}
+
+.hero-home .container {
+  position: relative;
+  z-index: 1;
+}
+
+.display-hero {
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.hero-stats strong {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  color: var(--orange);
+}
+
+/* ---------- Bloques de contenido ---------- */
+.section {
+  padding-block: 4.5rem;
+}
+
+.section-alt {
+  background-color: var(--gray-light);
+}
+
+.card-emelto {
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card-emelto:hover {
+  transform: translateY(-6px);
+}
+
+.card-emelto .icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(242, 140, 40, 0.15);
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+.benefit-item {
+  background: var(--white);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+/* ---------- Carrusel ---------- */
+.carousel-emelto img {
+  height: 460px;
+  object-fit: cover;
+  filter: brightness(0.72);
+}
+
+.carousel-caption {
+  background: rgba(11, 31, 58, 0.62);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  bottom: 2rem;
+}
+
+/* ---------- Video ---------- */
+.video-frame {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- Tablas ---------- */
+.table-emelto thead {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.table-emelto tbody tr:hover {
+  background-color: rgba(242, 140, 40, 0.08);
+}
+
+.badge-orange {
+  background-color: var(--orange);
+  color: var(--navy);
+}
+
+/* ---------- Galería ---------- */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(transparent, rgba(11, 31, 58, 0.9));
+  color: var(--white);
+  padding: 1.5rem 1rem 1rem;
+}
+
+/* ---------- Equipo / misión ---------- */
+.value-list li {
+  margin-bottom: 0.45rem;
+}
+
+.mission-card {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  height: 100%;
+}
+
+.mission-card.vision {
+  background: var(--navy-soft);
+}
+
+.team-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--orange);
+  line-height: 1;
+}
+
+/* ---------- Formulario ---------- */
+.form-emelto .form-control,
+.form-emelto .form-select {
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.9rem;
+}
+
+.form-emelto .form-control:focus,
+.form-emelto .form-select:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 0.2rem rgba(242, 140, 40, 0.25);
+}
+
+.contact-data {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  height: 100%;
+}
+
+.contact-data a {
+  color: var(--orange);
+}
+
+.map-embed {
+  border: 0;
+  border-radius: var(--radius);
+  min-height: 360px;
+  width: 100%;
+}
+
+/* ---------- Footer ---------- */
+.footer-emelto {
+  background: var(--navy-deep);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-emelto a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-emelto a:hover {
+  color: var(--orange);
+}
+
+.footer-brand {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#btnTop {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  display: none;
+  z-index: 1030;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767.98px) {
+  .display-hero {
+    font-size: 2.05rem;
+  }
+
+  .carousel-emelto img {
+    height: 280px;
+  }
+
+  .hero-home {
+    min-height: 78vh;
+  }
+}

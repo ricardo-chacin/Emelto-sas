@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contacto EMELTO SAS: formulario de visita técnica, datos y ubicación en Funza, Cundinamarca."
+    />
+    <title>Contacto | EMELTO SAS</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-emelto sticky-top" aria-label="Principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-light.svg" alt="EMELTO SAS" height="44" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-orange btn-sm px-3" href="contacto.html">Solicitar visita</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-hero" style="background-image: url('img/contacto.jpg')">
+      <div class="container">
+        <p class="section-kicker">Hablemos de su planta</p>
+        <h1 class="text-white display-5 fw-bold">Contacto</h1>
+        <p class="text-white-50 col-lg-7">Cuéntenos el activo, la falla o la ventana de parada. Coordinamos visita técnica.</p>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="section" aria-labelledby="tituloFormulario">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <p class="section-kicker">Solicitud</p>
+              <h2 id="tituloFormulario" class="section-title">Formulario de visita técnica</h2>
+              <div class="accent-bar"></div>
+              <form id="formContacto" class="form-emelto needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="nombre">Nombre completo</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name" />
+                    <div class="invalid-feedback">Indique su nombre (mínimo 3 caracteres).</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="empresa">Empresa / planta</label>
+                    <input class="form-control" type="text" id="empresa" name="empresa" required minlength="2" autocomplete="organization" />
+                    <div class="invalid-feedback">Indique el nombre de la empresa o planta.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Correo electrónico</label>
+                    <input class="form-control" type="email" id="email" name="email" required autocomplete="email" />
+                    <div class="invalid-feedback">Ingrese un correo válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" id="telefono" name="telefono" required pattern="[0-9+\s()-]{7,20}" autocomplete="tel" />
+                    <div class="invalid-feedback">Ingrese un teléfono de contacto.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="servicio">Servicio de interés</label>
+                    <select class="form-select" id="servicio" name="servicio" required>
+                      <option value="">Seleccione una opción</option>
+                      <option>Mantenimiento preventivo</option>
+                      <option>Mantenimiento correctivo</option>
+                      <option>Montajes industriales</option>
+                      <option>Inspecciones mecánicas</option>
+                    </select>
+                    <div class="invalid-feedback">Seleccione un servicio.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="mensaje">Descripción de la necesidad</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required minlength="15"></textarea>
+                    <div class="invalid-feedback">Describa el equipo o la falla (mínimo 15 caracteres).</div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="privacidad" required />
+                      <label class="form-check-label" for="privacidad">Autorizo el tratamiento de datos para agendar la visita técnica.</label>
+                      <div class="invalid-feedback">Debe autorizar el tratamiento de datos.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-orange btn-lg" type="submit">Enviar solicitud</button>
+                  </div>
+                </div>
+                <div id="formAlert" class="d-none"></div>
+              </form>
+            </div>
+            <div class="col-lg-5">
+              <aside class="contact-data">
+                <h2 class="h4">Datos de contacto</h2>
+                <p class="mb-4">Atención de lunes a viernes, 7:00 a 17:00. Emergencias mecánicas: línea 24 horas.</p>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="bi bi-geo-alt-fill me-2 text-warning" aria-hidden="true"></i>
+                    Parque Industrial Funza, Autopista Medellín km 7, Cundinamarca, Colombia
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-telephone-fill me-2 text-warning" aria-hidden="true"></i>
+                    <a href="tel:+576013904520">+57 (601) 390 4520</a>
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-whatsapp me-2 text-warning" aria-hidden="true"></i>
+                    <a href="https://wa.me/573104589012">+57 310 458 9012</a>
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-envelope-fill me-2 text-warning" aria-hidden="true"></i>
+                    <a href="mailto:contacto@emelto.com.co">contacto@emelto.com.co</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-building me-2 text-warning" aria-hidden="true"></i>
+                    NIT 901.458.632-4
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="tituloMapa">
+        <div class="container">
+          <p class="section-kicker">Ubicación</p>
+          <h2 id="tituloMapa" class="section-title">Mapa</h2>
+          <div class="accent-bar"></div>
+          <iframe
+            class="map-embed"
+            title="Mapa de ubicación de EMELTO SAS en Funza, Cundinamarca"
+            src="https://maps.google.com/maps?q=Parque%20Industrial%20Funza%20Cundinamarca&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-emelto pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <p class="footer-brand">EMELTO SAS</p>
+            <p>Mantenimiento mecánico industrial para plantas de proceso, manufactura y energía.</p>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white fw-semibold">Navegación</p>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white fw-semibold">Contacto</p>
+            <p class="mb-1">Parque Industrial Funza, Cundinamarca</p>
+            <p class="mb-1"><a href="tel:+576013904520">+57 (601) 390 4520</a></p>
+            <p class="mb-0"><a href="mailto:contacto@emelto.com.co">contacto@emelto.com.co</a></p>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <p class="small mb-0">&copy; <span id="year"></span> EMELTO SAS. Sitio académico corporativo.</p>
+      </div>
+    </footer>
+
+    <button type="button" id="btnTop" class="btn btn-orange rounded-circle" aria-label="Volver arriba">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
